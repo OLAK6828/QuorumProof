@@ -20,6 +20,9 @@ New to the codebase? Read these two first:
 | [architecture.md](./architecture.md) | System overview: FBA trust slices, SBTs, the contract set, how the pieces fit together. |
 | [deployment-guide.md](./deployment-guide.md) | End-to-end walkthrough: build the contracts, deploy them, initialize and wire them, verify. |
 
+Stuck on a term or a common question? See the [glossary](./glossary.md) and
+the [FAQ](./faq.md). Upgrading? Start with the [migration guides](./migration-guides.md).
+
 Prefer learning by watching or doing? See the [video tutorials](./video-tutorials.md)
 and the [interactive documentation](./interactive-documentation.md) (search, API
 playground, quorum slice simulator).
@@ -36,6 +39,9 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 | [video-tutorials.md](./video-tutorials.md) | Index of video tutorials for common tasks, with scripts, captions, and the recording guide (issue #1634). |
 | [interactive-documentation.md](./interactive-documentation.md) | Interactive docs: full-text search, API playground, slice/hash playgrounds, and the feedback loop (issue #1635). |
 | [bbs-plus-tutorial.md](./bbs-plus-tutorial.md) | BBS+ selective-disclosure tutorial. |
+| [code-examples.md](./code-examples.md) | REST examples in Python, JavaScript, Rust and Go, with example templates, testing and maintenance rules (issue #1638). |
+| [faq.md](./faq.md) | Frequently asked questions with short answers linking to the full docs (issue #1639). |
+| [glossary.md](./glossary.md) | Alphabetical glossary of project-specific and domain terms (issue #1640). |
 
 ---
 
@@ -144,6 +150,8 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 | [upgrade-testing.md](./upgrade-testing.md) | Upgrade simulation tests and the static state-compatibility check (issue #1630). |
 | [migration-invariants.md](./migration-invariants.md) | Formal invariant set the migration verifier checks (enforced in CI). |
 | [SLICE_MIGRATION_GUIDE.md](./SLICE_MIGRATION_GUIDE.md) | Migrating existing quorum slices (issue #1253). |
+| [migration-guides.md](./migration-guides.md) | Breaking changes per version and step-by-step migration and rollback guides for the API, contract state/schema, WASM and database (issue #1641). |
+| [migration-testing-guide.md](./migration-testing-guide.md) | Testing a migration and its rollback before production: static checks, tests, testnet rehearsal, go/no-go (issue #1641). |
 
 ---
 
