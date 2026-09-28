@@ -61,6 +61,16 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 
 ---
 
+## Developer Tooling & Environment
+
+| Doc | What it covers |
+|---|---|
+| [local-dev-setup.md](./local-dev-setup.md) | Setting up a local development environment: prerequisites, setup script, Docker Compose, standalone network, and troubleshooting (issue #1663). |
+| [ide-setup.md](./ide-setup.md) | VS Code extension recommendations, workspace settings, debug configurations, and tasks for contract and API development (issue #1664). |
+| [environment-parity.md](./environment-parity.md) | Detecting and remediating env/config drift between environments using check_env_parity.sh and compare_environments.sh (issue #1662). |
+
+---
+
 ## Deployment & Operations
 
 | Doc | What it covers |
@@ -113,6 +123,8 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 | [security-best-practices.md](./security-best-practices.md#security-requirements-checklist-threat-modeling-and-tooling) | Security requirements (SR-* IDs), PR/release checklists, threat-modeling guide, and security tooling (issue #1637). |
 | [security-audit-checklist.md](./security-audit-checklist.md) | Internal review checklist used before releases. |
 | [issuer-security-checklist.md](./issuer-security-checklist.md) | Security checklist for institutions issuing credentials. |
+| [attestor-key-custody-guide.md](./attestor-key-custody-guide.md) | Key custody practices and HSM recommendations for attestor institutions. |
+| [container-image-scanning.md](./container-image-scanning.md) | Container image vulnerability scanning with Trivy: CI pipeline and suppression policy. |
 | [gdpr-compliance.md](./gdpr-compliance.md) | GDPR obligations and how the system meets them. |
 | [audit-log-format.md](./audit-log-format.md) | Structure and semantics of the audit log. |
 | [formal-verification.md](./formal-verification.md) | Formal verification of critical functions (issue #1317). |
@@ -152,6 +164,13 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 | [SLICE_MIGRATION_GUIDE.md](./SLICE_MIGRATION_GUIDE.md) | Migrating existing quorum slices (issue #1253). |
 | [migration-guides.md](./migration-guides.md) | Breaking changes per version and step-by-step migration and rollback guides for the API, contract state/schema, WASM and database (issue #1641). |
 | [migration-testing-guide.md](./migration-testing-guide.md) | Testing a migration and its rollback before production: static checks, tests, testnet rehearsal, go/no-go (issue #1641). |
+| [user-credentials-migration.md](./user-credentials-migration.md) | Migrating user credential records between schema versions. |
+| [sbt-lifecycle.md](./sbt-lifecycle.md) | Full lifecycle of a Soulbound Token: issuance, attestation, revocation, and expiry. |
+| [saga-rollback-specification.md](./saga-rollback-specification.md) | Saga pattern specification for multi-step contract operations and compensating rollbacks. |
+| [batch-issuance-limits.md](./batch-issuance-limits.md) | Limits and recommendations for batch credential issuance operations. |
+| [circuit-breaker-write-coverage.md](./circuit-breaker-write-coverage.md) | Admin circuit-breaker write coverage tracking and enforcement. |
+| [quorum-slice-guide.md](./quorum-slice-guide.md) | End-to-end guide: creating, managing, and querying quorum slices. |
+| [unwrap-audit.md](./unwrap-audit.md) | Audit log of unwrap/expect usage in contract source and remediation status (issue #1391). |
 
 ---
 
@@ -167,6 +186,8 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 | [government-licensing-integration.md](./government-licensing-integration.md) | Protocol for licensing bodies to integrate as verified issuers. |
 | [websocket-scaling.md](./websocket-scaling.md) | Scaling WebSocket delivery across multiple API-server replicas. |
 | [plugin-development-guide.md](./plugin-development-guide.md) | Writing, testing, and distributing API-server plugins. |
+| [throttling.md](./throttling.md) | Request throttling and backpressure configuration for the API server. |
+| [api-quality-guards.md](./api-quality-guards.md) | API quality gates: contract tests, lint rules, and CI enforcement. |
 
 See also [`../api-server/docs/API_DOCUMENTATION.md`](../api-server/docs/API_DOCUMENTATION.md)
 for the auto-generated OpenAPI / Swagger reference.
