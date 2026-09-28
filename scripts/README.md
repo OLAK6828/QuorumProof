@@ -92,6 +92,21 @@ Columns:
 
 ---
 
+## Scaling & Service Mesh
+
+| Script | What it does | Invoked by | Test coverage |
+|---|---|---|---|
+| `scaling_load_test.sh` | Drives the api-server under sustained load while watching the HPA; validates replica scale-up and scale-down (issue #1658) | `ci.yml` / `manual` | — |
+
+## Disaster Recovery Testing
+
+| Script | What it does | Invoked by | Test coverage |
+|---|---|---|---|
+| `dr_test_harness.sh` | Runs a suite of DR scenarios (RPC failover, snapshot/restore, key rotation, pod kill, backup restore) and validates RTO/RPO targets (issue #1659) | `manual` / scheduled | — |
+| `validate_dr.sh` | Lightweight CI check — verifies DR scripts exist, are executable, and that docs reference the correct procedures (issue #1659) | `ci.yml` | — |
+
+---
+
 ## Test Coverage Summary
 
 Three scripts in `scripts/tests/` provide automated test coverage:
