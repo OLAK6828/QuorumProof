@@ -92,10 +92,12 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 | [backup-verification.md](./backup-verification.md) | Automated backup verification, integrity checks, and restoring from a verified backup. |
 | [disaster-recovery.md](./disaster-recovery.md) | Emergency pause/redeploy and credential-restoration procedures. |
 | [DR_PLAN_IMPLEMENTATION.md](./DR_PLAN_IMPLEMENTATION.md) | Implementation notes for the disaster-recovery plan. |
+| [dr-runbook.md](./dr-runbook.md) | DR runbook: quick-reference decision tree and step-by-step recovery procedures for all scenarios (issue #1659). |
 | [resilience.md](./resilience.md) | Resilience requirements and chaos-testing approach (issue #1003). |
 | [operational-runbook.md](./operational-runbook.md) | Day-to-day operational procedures. |
 | [OPERATOR_RUNBOOK.md](./OPERATOR_RUNBOOK.md) | Operator-facing runbook for common incidents and tasks. |
 | [troubleshooting-guide.md](./troubleshooting-guide.md) | Diagnosing common failures across contracts, API, and infra. |
+| [autoscaling-guide.md](./autoscaling-guide.md) | HPA policy, metrics pipeline, threshold tuning, and load testing for automated scaling (issue #1658). |
 
 ---
 
@@ -110,6 +112,8 @@ Then see [`../README.md`](../README.md) for the contribution workflow and
 | [operator-health-metrics.md](./operator-health-metrics.md) | Health metrics exposed for operators and their meaning. |
 | [perf-regression.md](./perf-regression.md) | Performance-regression benchmarking and thresholds. |
 | [performance-tuning-guide.md](./performance-tuning-guide.md) | Bottlenecks, tuning parameters, benchmark methodology, and performance monitoring. |
+| [service-mesh-operations.md](./service-mesh-operations.md) | Istio service mesh: installation, mTLS enforcement, traffic visualisation, distributed tracing (issue #1660). |
+| [cost-alert-thresholds.md](./cost-alert-thresholds.md) | Cost monitoring, alert thresholds (warning/critical), alert routing, and threshold tuning (issue #1661). |
 
 ---
 
