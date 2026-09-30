@@ -28,6 +28,9 @@ Columns:
 | `check_docs_index.sh` | Verifies every `docs/*.md` file is linked from `docs/README.md` (issue #1498) | `ci.yml` (`docs-index` job) | — |
 | `check_code_examples.sh` | Runs the multi-language code examples against a mock API and diffs their output (issue #1638) | `code-examples.yml` | — |
 | `validate_env.sh` | Cross-checks `environments.toml` against `.env` to ensure the selected network matches the contract addresses | `manual` | — |
+| `setup_dev.sh` | One-shot local dev environment setup: checks prerequisites, installs Rust targets, builds contracts, installs npm deps, creates `.env` (issue #1663) | `manual` | — |
+| `check_env_parity.sh` | Compares two env files for missing keys, placeholder values, network consistency, and contract address format; emits color-coded drift report (issue #1662) | `manual` / CI | — |
+| `compare_environments.sh` | Multi-environment comparison: reads named snapshots from `environments/`, checks RPC/passphrase consistency, delegates per-file diff to `check_env_parity.sh` (issue #1662) | `manual` | — |
 
 ---
 
